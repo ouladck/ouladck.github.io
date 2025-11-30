@@ -166,6 +166,10 @@ body {
     color: var(--prompt-color);
 }
 
+.hidden {
+    display: none;
+}
+
 .neofetch-output {
     margin-bottom: 30px;
 }
