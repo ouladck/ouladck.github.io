@@ -1,6 +1,6 @@
 # Karim Oulad Chalha - Personal Portfolio
 
-This repository hosts the personal portfolio website for Karim Oulad Chalha, a Full Stack Developer with over 8 years of experience. The site showcases his professional journey, skills, education, and awards.
+This repository hosts the personal portfolio website for Karim Oulad Chalha, a Full Stack Developer with over 10 years of experience. The site showcases his professional journey, skills, education, and awards.
 
 ## Technologies Used
 
