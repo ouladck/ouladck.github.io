@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #ecf0f1;
+    --text-color: #34495e;
+    --container-bg: #ffffff;
+    --border-radius: 8px;
+    --shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--container-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 2rem 0;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+header .container {
+    background: transparent;
+    box-shadow: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    border: 5px solid var(--secondary-color);
+}
+
+.profile-info h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.social-links a {
+    color: var(--background-color);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--secondary-color);
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -2.5rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    border: 4px solid var(--secondary-color);
+}
+
+.timeline-item h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.timeline-item p {
+    margin-bottom: 0.5rem;
+}
+
+.award-item h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+footer .container {
+    background: transparent;
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
