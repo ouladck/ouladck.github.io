@@ -1,22 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('section, footer');
+    const typewriterElement = document.getElementById('typewriter');
+    const text = "I build modern, fast, and reliable web experiences. I turn complex problems into simple, beautiful, and intuitive designs. I am a code craftsman, a digital architect, and a problem solver.";
+    let i = 0;
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
+    function typeWriter() {
+        if (i < text.length) {
+            typewriterElement.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+        }
+    }
 
-    sections.forEach(section => {
-        section.style.opacity = 0;
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(section);
-    });
+    typeWriter();
 });
