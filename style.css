@@ -165,3 +165,31 @@ body {
 .social-links a:hover {
     color: var(--prompt-color);
 }
+
+.neofetch-output {
+    margin-bottom: 30px;
+}
+
+.neofetch-output pre {
+    display: flex;
+    align-items: center;
+    font-family: 'Fira Code', monospace;
+}
+
+.neofetch-logo {
+    color: var(--prompt-color);
+    margin-right: 20px;
+}
+
+.neofetch-info {
+    color: var(--text-color);
+}
+
+.neofetch-title {
+    color: var(--command-color);
+}
+
+.neofetch-label {
+    color: var(--prompt-color);
+    font-weight: bold;
+}
