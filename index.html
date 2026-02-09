@@ -1,108 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karim Oulad Chalha - Vue 3 Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="terminal">
-            <div class="terminal-header">
-                <div class="terminal-buttons">
-                    <span class="terminal-button red"></span>
-                    <span class="terminal-button yellow"></span>
-                    <span class="terminal-button green"></span>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <header class="site-header">
+        <div class="brand">KOC</div>
+        <nav class="site-nav">
+            <a href="#work">Work</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn btn-ghost" href="#contact">Book a call</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Vue 3 Developer</p>
+                <h1>Designing and shipping fast, elegant web experiences.</h1>
+                <p class="lead">
+                    I build modern frontend systems with Vue 3, TypeScript, and a sharp focus on performance,
+                    accessibility, and developer experience.
+                </p>
+                <div class="cta-row">
+                    <a class="btn btn-primary" href="#work">View projects</a>
+                    <a class="btn btn-secondary" href="#contact">Get in touch</a>
                 </div>
-                <div class="terminal-title">
-                    /home/karim
-                </div>
-            </div>
-            <div class="terminal-body">
-                <div class="terminal-line">
-                    <span class="prompt">></span> <span class="command" id="typewriter"></span>
-                </div>
-                <div class="skills-section">
-                    <h2>My Arsenal</h2>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="ECMAScript">
-                            </div>
-                            <h3>ECMAScript</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
-                            </div>
-                            <h3>TypeScript</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                            </div>
-                            <h3>Git</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="GitHub Actions">
-                            </div>
-                            <h3>GitHub Actions</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue 3">
-                            </div>
-                            <h3>Vue 3</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite">
-                            </div>
-                            <h3>Vite</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitest/vitest-original.svg" alt="Vitest">
-                            </div>
-                            <h3>Vitest</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright">
-                            </div>
-                            <h3>Playwright</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/atom/atom-original.svg" alt="TDD">
-                            </div>
-                            <h3>TDD</h3>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass">
-                            </div>
-                            <h3>Sass</h3>
-                        </div>
+                <div class="meta-row">
+                    <div class="stat">
+                        <span class="stat-value">8+ yrs</span>
+                        <span class="stat-label">Frontend focus</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">30+</span>
+                        <span class="stat-label">Shipped launches</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">A11y</span>
+                        <span class="stat-label">Inclusive design</span>
                     </div>
                 </div>
-                 <div class="terminal-line">
-                    <span class="prompt">></span> <span class="command">./contact</span>
-                </div>
-                 <div class="terminal-line">
-                     <div class="social-links">
-                        <a href="https://github.com/ouladck" target="_blank">GitHub</a>
-                        <a href="https://www.linkedin.com/in/karim88/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card reveal">
+                    <div class="glass-header">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-amber"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <div class="glass-body">
+                        <p class="code-line">const product = build({</p>
+                        <p class="code-line indent">speed: "90+ Lighthouse",</p>
+                        <p class="code-line indent">quality: "typed + tested",</p>
+                        <p class="code-line indent">design: "pixel-perfect",</p>
+                        <p class="code-line">});</p>
                     </div>
                 </div>
-                 <div class="terminal-line">
-                    <span class="prompt">></span>
+                <div class="badge-stack reveal">
+                    <span>Vue 3</span>
+                    <span>TypeScript</span>
+                    <span>Vite</span>
+                    <span>Vitest</span>
+                    <span>Playwright</span>
+                    <span>CI/CD</span>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section id="expertise" class="section">
+            <div class="section-head">
+                <h2>Expertise built for modern teams</h2>
+                <p>From greenfield builds to platform hardening, I focus on scale, velocity, and polish.</p>
+            </div>
+            <div class="grid">
+                <article class="card reveal">
+                    <h3>Design systems</h3>
+                    <p>Component libraries with strong tokens, docs, and consistent UX patterns.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Performance tuning</h3>
+                    <p>Bundle analysis, route-level optimizations, and ultra-fast Vite pipelines.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Quality engineering</h3>
+                    <p>Unit, integration, and E2E coverage with Vitest + Playwright.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Delivery velocity</h3>
+                    <p>Clean CI/CD, preview environments, and trunk-friendly workflows.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <div class="section-head">
+                <h2>Selected work</h2>
+                <p>Highlights of what I deliver for product teams and agencies.</p>
+            </div>
+            <div class="work-list">
+                <article class="work-item reveal">
+                    <div>
+                        <h3>Vue 3 SaaS Dashboard</h3>
+                        <p>Multi-tenant analytics UI with design tokens, i18n, and role-based access.</p>
+                    </div>
+                    <span class="pill">Design system</span>
+                </article>
+                <article class="work-item reveal">
+                    <div>
+                        <h3>Headless Commerce UI</h3>
+                        <p>Performance-first storefront with smart caching and instant search.</p>
+                    </div>
+                    <span class="pill">Performance</span>
+                </article>
+                <article class="work-item reveal">
+                    <div>
+                        <h3>Content Platform Revamp</h3>
+                        <p>Atomic content blocks, preview pipelines, and editor-friendly UX.</p>
+                    </div>
+                    <span class="pill">CMS</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section cta">
+            <div>
+                <h2>Let’s build your next release</h2>
+                <p>Open to select consulting and long-term collaborations.</p>
+            </div>
+            <div class="cta-actions">
+                <a class="btn btn-primary" href="mailto:hello@ouladck.dev">Email me</a>
+                <a class="btn btn-secondary" href="https://github.com/ouladck" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/karim88/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>Karim Oulad Chalha</span>
+        <span>Vue 3 Developer</span>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
