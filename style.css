@@ -414,29 +414,58 @@ main {
 
 .work-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
     padding: 20px 24px;
     background: var(--card);
     border-radius: 18px;
     border: 1px solid var(--line);
+    min-height: 290px;
+}
+
+.work-main {
+    width: 100%;
 }
 
 .work-item h3 {
     margin-bottom: 6px;
 }
 
-.work-item p {
+.work-meta {
     color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.work-summary {
+    color: #d4d8e0;
+    margin-bottom: 10px;
+}
+
+.work-points {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--muted);
+    display: grid;
+    gap: 6px;
+}
+
+.work-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 6px;
 }
 
 .pill {
-    padding: 8px 14px;
+    padding: 7px 12px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.09);
     border: 1px solid var(--line);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
 }
 
 .cta {
