@@ -242,10 +242,13 @@ main {
 }
 
 .tech-chip {
+    appearance: none;
+    -webkit-appearance: none;
     padding: 8px 14px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 999px;
     border: 1px solid var(--line);
+    font: inherit;
     font-size: 0.9rem;
     color: var(--text);
     cursor: pointer;

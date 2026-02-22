@@ -63,10 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!snippetContainer) {
             return;
         }
+
         snippetContainer.classList.add('is-switching');
-        snippetContainer.innerHTML = lines
-            .map((line) => `<p class="code-line">${line.replace(/ /g, '&nbsp;')}</p>`)
-            .join('');
+        snippetContainer.replaceChildren();
+
+        lines.forEach((line) => {
+            const paragraph = document.createElement('p');
+            paragraph.className = 'code-line';
+            paragraph.textContent = line;
+            snippetContainer.appendChild(paragraph);
+        });
+
         setTimeout(() => snippetContainer.classList.remove('is-switching'), 120);
     };
 
