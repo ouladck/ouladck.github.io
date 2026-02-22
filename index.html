@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karim Oulad Chalha - Full Stack & Front-end Engineer</title>
-    <link rel="stylesheet" href="style.css?v=20260222-1" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="bg-orb orb-a"></div>
@@ -51,9 +51,15 @@
             <div class="hero-visual">
                 <div class="glass-card reveal">
                     <div class="glass-header">
-                        <span class="dot dot-red"></span>
-                        <span class="dot dot-amber"></span>
-                        <span class="dot dot-green"></span>
+                        <div class="glass-window-controls">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-amber"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="snippet-tools">
+                            <span class="snippet-lang" id="snippet-lang">config</span>
+                            <button type="button" class="copy-btn" id="copy-snippet">Copy</button>
+                        </div>
                     </div>
                     <div class="glass-body" id="tech-snippet">
                         <p class="code-line">const delivery = build({</p>
@@ -201,6 +207,6 @@
         <span>La Mulatière, Auvergne‑Rhône‑Alpes, France</span>
     </footer>
 
-    <script src="script.js?v=20260222-1"></script>
+    <script src="script.js"></script>
 </body>
 </html>

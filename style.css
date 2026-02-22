@@ -205,9 +205,16 @@ main {
 
 .glass-header {
     display: flex;
-    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
     padding: 16px;
     background: rgba(255, 255, 255, 0.04);
+}
+
+.glass-window-controls {
+    display: flex;
+    gap: 8px;
 }
 
 .dot {
@@ -224,10 +231,93 @@ main {
     padding: 24px;
 }
 
+.snippet-tools {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.snippet-lang {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9bb2c9;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    padding: 4px 10px;
+}
+
+.copy-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text);
+    border-radius: 8px;
+    font: inherit;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
 .code-line {
-    font-family: "Space Grotesk", sans-serif;
+    display: grid;
+    grid-template-columns: 2ch 1fr;
+    column-gap: 14px;
+    font-family: "Fira Code", "Space Grotesk", monospace;
     color: #cfd3dc;
     line-height: 1.8;
+    white-space: pre;
+}
+
+.line-number {
+    color: #738396;
+    text-align: right;
+    user-select: none;
+}
+
+.line-content {
+    overflow-wrap: anywhere;
+}
+
+.token-keyword {
+    color: #ff7b72;
+}
+
+.token-function {
+    color: #79c0ff;
+}
+
+.token-string {
+    color: #a5d6a7;
+}
+
+.token-number {
+    color: #f2cc8f;
+}
+
+.token-type {
+    color: #c4b5fd;
+}
+
+.token-key {
+    color: #64d2ff;
+}
+
+.token-tag {
+    color: #7ee787;
+}
+
+.token-attr-setup {
+    color: #ff9e64;
+}
+
+.token-attr-lang {
+    color: #73daca;
 }
 
 .indent {
