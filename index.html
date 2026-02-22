@@ -55,7 +55,7 @@
                         <span class="dot dot-amber"></span>
                         <span class="dot dot-green"></span>
                     </div>
-                    <div class="glass-body">
+                    <div class="glass-body" id="tech-snippet">
                         <p class="code-line">const delivery = build({</p>
                         <p class="code-line indent">frontend: "Vue 3 / Nuxt 3",</p>
                         <p class="code-line indent">quality: "TDD · CI/CD · Vitest",</p>
@@ -64,12 +64,13 @@
                     </div>
                 </div>
                 <div class="badge-stack reveal">
-                    <span>Vue 3</span>
-                    <span>Nuxt 3</span>
-                    <span>Laravel</span>
-                    <span>Vitest</span>
-                    <span>Docker</span>
-                    <span>GitLab CI</span>
+                    <button class="tech-chip is-active" type="button" data-tech="default">Overview</button>
+                    <button class="tech-chip" type="button" data-tech="vue">Vue 3</button>
+                    <button class="tech-chip" type="button" data-tech="nuxt">Nuxt 3</button>
+                    <button class="tech-chip" type="button" data-tech="laravel">Laravel</button>
+                    <button class="tech-chip" type="button" data-tech="vitest">Vitest</button>
+                    <button class="tech-chip" type="button" data-tech="docker">Docker</button>
+                    <button class="tech-chip" type="button" data-tech="playwright">Playwright</button>
                 </div>
             </div>
         </section>

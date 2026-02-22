@@ -241,12 +241,30 @@ main {
     gap: 12px;
 }
 
-.badge-stack span {
+.tech-chip {
     padding: 8px 14px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 999px;
     border: 1px solid var(--line);
     font-size: 0.9rem;
+    color: var(--text);
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.tech-chip:hover {
+    transform: translateY(-1px);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.tech-chip.is-active {
+    background: rgba(255, 107, 53, 0.22);
+    border-color: rgba(255, 107, 53, 0.8);
+}
+
+.glass-body.is-switching {
+    opacity: 0.55;
+    transition: opacity 0.12s ease;
 }
 
 .section {
