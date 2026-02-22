@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const snippetContainer = document.getElementById('tech-snippet');
     const snippetLang = document.getElementById('snippet-lang');
     const copyButton = document.getElementById('copy-snippet');
+    const expYearsFull = document.getElementById('exp-years-full');
+    const expYearsShort = document.getElementById('exp-years-short');
     const techChips = document.querySelectorAll('.tech-chip');
     let currentSnippetText = '';
+    const startYear = 2016;
 
     const snippets = {
         default: {
@@ -147,6 +150,14 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         { threshold: 0.2 }
     );
+
+    const years = Math.max(0, new Date().getFullYear() - startYear);
+    if (expYearsFull) {
+        expYearsFull.textContent = `${years}+ years`;
+    }
+    if (expYearsShort) {
+        expYearsShort.textContent = `${years}+ yrs`;
+    }
 
     revealItems.forEach((item) => observer.observe(item));
 
