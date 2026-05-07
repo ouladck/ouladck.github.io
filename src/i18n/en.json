@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "experience": "Experience",
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Full Stack Engineer · Tech Lead",
+    "title": "I architect Vue 3 platforms, set the standards, and ship with the team.",
+    "description": "10+ years building critical apps in healthcare, e-commerce, telecom, and utilities — across France and Morocco.",
+    "cta_experience": "View experience",
+    "cta_contact": "Get in touch",
+    "stat1_value": "10+",
+    "stat1_label": "years Full Stack",
+    "stat2_value": "Vue 3",
+    "stat2_label": "Nuxt 3 Core",
+    "stat3_value": "FR · MA",
+    "stat3_label": "France & Morocco"
+  },
+  "expertise": {
+    "title": "Expertise built for modern teams",
+    "subtitle": "From greenfield builds to platform hardening, I focus on scale, velocity, and quality."
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "10+ years of impactful missions in France and Morocco"
+  },
+  "projects": {
+    "title": "Projects & Experiments",
+    "subtitle": "What I build outside of client engagements"
+  },
+  "testimonials": {
+    "title": "What people say"
+  },
+  "skills": {
+    "title": "Skills",
+    "also_with": "Also worked with",
+    "certifications": "Certifications",
+    "languages": "Languages"
+  },
+  "contact": {
+    "title": "Let's build your next release.",
+    "subtitle": "Available for consulting and long-term collaborations.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "phone": "Call"
+  },
+  "footer": {
+    "built": "Built with Nuxt 3, TypeScript & BEM."
+  }
+}

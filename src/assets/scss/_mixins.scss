@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+@mixin respond-to($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin section-padding {
+  padding-top: $section-padding-mobile;
+  padding-bottom: $section-padding-mobile;
+
+  @include respond-to($bp-lg) {
+    padding-top: $section-padding-desktop;
+    padding-bottom: $section-padding-desktop;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: $space-6;
+
+  @include respond-to($bp-lg) {
+    padding-inline: $space-8;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

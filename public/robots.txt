@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ouladck.github.io/sitemap.xml

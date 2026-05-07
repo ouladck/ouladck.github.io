@@ -1,0 +1,45 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'reset';
+@use 'typography';
+
+:root {
+  --color-bg-primary: #{$color-bg-primary};
+  --color-bg-secondary: #{$color-bg-secondary};
+  --color-bg-code: #{$color-bg-code};
+  --color-text-primary: #{$color-text-primary};
+  --color-text-secondary: #{$color-text-secondary};
+  --color-text-muted: #{$color-text-muted};
+  --color-accent: #{$color-accent};
+  --color-accent-hover: #{$color-accent-hover};
+  --color-accent-subtle: #{$color-accent-subtle};
+  --color-border: #{$color-border};
+  --color-success: #{$color-success};
+  --color-tag-bg: #{$color-tag-bg};
+  --color-tag-text: #{$color-tag-text};
+}
+
+[data-theme='dark'] {
+  --color-bg-primary: #{$dark-bg-primary};
+  --color-bg-secondary: #{$dark-bg-secondary};
+  --color-text-primary: #{$dark-text-primary};
+  --color-text-secondary: #{$dark-text-secondary};
+  --color-border: #{$dark-border};
+  --color-tag-bg: #{$dark-tag-bg};
+  --color-tag-text: #{$dark-text-secondary};
+  --color-accent-subtle: #{$dark-accent-subtle};
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background-color $transition-medium, color $transition-medium;
+}
+
+.container {
+  @include container;
+}
+
+.sr-only {
+  @include visually-hidden;
+}
