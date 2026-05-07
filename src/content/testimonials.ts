@@ -9,11 +9,19 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    quote: 'Karim possède une combinaison rare de compétences techniques solides et de sens du delivery. Sa capacité à élever le niveau de l\'équipe tout en maintenant une haute vélocité est précieuse.',
-    quoteEn: 'Karim has a rare combination of strong technical skills and delivery sense. His ability to raise the team\'s level while maintaining high velocity is invaluable.',
-    author: 'Collaborateur LinkedIn',
-    role: 'Ingénieur Senior',
-    company: 'Recommandation LinkedIn',
-    initials: 'CL',
+    quote: '<!-- TODO: Coller ici votre recommandation LinkedIn #1 (texte complet) -->',
+    quoteEn: '<!-- TODO: Paste LinkedIn recommendation #1 here (full text) -->',
+    author: '<!-- Prénom NOM -->',
+    role: '<!-- Titre du poste -->',
+    company: '<!-- Entreprise -->',
+    initials: '??',
+  },
+  {
+    quote: '<!-- TODO: Coller ici votre recommandation LinkedIn #2 (texte complet) -->',
+    quoteEn: '<!-- TODO: Paste LinkedIn recommendation #2 here (full text) -->',
+    author: '<!-- Prénom NOM -->',
+    role: '<!-- Titre du poste -->',
+    company: '<!-- Entreprise -->',
+    initials: '??',
   },
 ]

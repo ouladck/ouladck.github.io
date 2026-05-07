@@ -27,14 +27,6 @@ const { t } = useI18n()
           <BaseIcon name="linkedin" :size="20" aria-hidden="true" />
           LinkedIn
         </a>
-        <a
-          href="tel:+33XXXXXXXXX"
-          class="contact__link"
-          :aria-label="t('contact.phone')"
-        >
-          <BaseIcon name="phone" :size="20" aria-hidden="true" />
-          {{ t('contact.phone') }}
-        </a>
       </div>
     </div>
   </section>
