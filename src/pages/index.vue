@@ -21,7 +21,6 @@ watch(locale, (val) => {
     <ExpertiseGrid />
     <ExperienceTimeline />
     <ProjectsSection />
-    <TestimonialsSection />
     <SkillsSection />
     <ContactSection />
   </main>
